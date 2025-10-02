@@ -339,5 +339,52 @@ The SEO Analysis Tool has been transformed from a basic analyzer into a comprehe
 ✅ **Professional design** with modern UI/UX  
 ✅ **Command-line interface** for automation  
 ✅ **Export capabilities** (CSV, JSON-ready)  
+✅ **🆕 Comprehensive sitemap generation** with full website crawling  
+✅ **🆕 Intelligent website discovery** respecting robots.txt  
+✅ **🆕 Professional XML sitemaps** with priority and change frequency  
 
-This is now a **professional-grade SEO analysis platform** that rivals commercial SEO tools while providing the flexibility of local analysis and AI-powered insights.
+## 🆕 **NEW: Comprehensive Sitemap Generation**
+
+### **🕷️ Full Website Crawling:**
+- **Automatic page discovery** through intelligent crawling
+- **Breadth-first crawling** with configurable depth limits
+- **Robots.txt compliance** for ethical crawling
+- **Parallel processing** for fast discovery (up to 5 workers)
+- **Smart URL filtering** to avoid admin pages and files
+- **Duplicate detection** and normalization
+
+### **🗺️ Professional Sitemap Generation:**
+- **XML Sitemap Protocol 0.9** compliant output
+- **Automatic priority assignment** based on page depth and content quality
+- **Change frequency optimization** (daily/weekly/monthly/yearly)
+- **Last modified dates** from server headers when available
+- **Professional XML formatting** with proper namespaces
+
+### **📊 Integrated SEO Analysis:**
+- **Content analysis** of discovered pages
+- **Technical SEO evaluation** for each page
+- **Issue identification** across the entire site
+- **Performance metrics** for all discovered pages
+- **Comprehensive reporting** with visual insights
+
+### **🎯 Usage Examples:**
+```bash
+# Generate sitemap with full website crawling
+python ultimate_seo_analyzer.py https://example.com --generate-sitemap
+
+# Advanced sitemap generation with custom limits
+python ultimate_seo_analyzer.py https://example.com --generate-sitemap --max-pages 1000 --max-depth 6
+
+# Standalone sitemap generator
+python sitemap_generator.py https://example.com --max-pages 500 --max-depth 5
+
+# Demo sitemap generation
+python demo_sitemap.py
+```
+
+### **📄 Generated Files:**
+1. **sitemap_domain_timestamp.xml** - Professional XML sitemap
+2. **sitemap_report_domain_timestamp.html** - Detailed crawling report
+3. **comprehensive_crawl_report_domain_timestamp.html** - Complete analysis with SEO insights
+
+This is now a **professional-grade SEO analysis platform** that rivals commercial SEO tools while providing the flexibility of local analysis, AI-powered insights, and comprehensive sitemap generation capabilities.

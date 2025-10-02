@@ -26,6 +26,15 @@ The most comprehensive SEO analysis tool available - featuring advanced AI-power
 - **Site-wide issue identification** and prioritization
 - **Performance distribution** analysis across all pages
 
+### 🆕 **Comprehensive Sitemap Generation**
+- **🕷️ Full website crawling** - Discovers ALL pages on your website
+- **🗺️ Automatic sitemap.xml generation** - Creates professional XML sitemaps
+- **📊 Content analysis** - Analyzes discovered pages for SEO issues
+- **🤖 Intelligent crawling** - Respects robots.txt and avoids duplicate content
+- **📈 Priority assignment** - Automatically assigns priorities based on page depth and content
+- **⚡ Parallel processing** - Fast crawling with configurable workers
+- **📋 Comprehensive reporting** - Detailed HTML reports with all discovered pages
+
 ### 📊 **Interactive Reports**
 - **Beautiful HTML reports** with animations and charts
 - **Responsive design** works on all devices
@@ -87,6 +96,18 @@ python ultimate_seo_analyzer.py https://example.com --bulk
 python ultimate_seo_analyzer.py https://example.com --bulk --max-urls 500
 ```
 
+#### **🆕 Comprehensive Sitemap Generation**
+```bash
+# Generate complete sitemap with full website crawling
+python ultimate_seo_analyzer.py https://example.com --generate-sitemap
+
+# Advanced sitemap generation with custom limits
+python ultimate_seo_analyzer.py https://example.com --generate-sitemap --max-pages 1000 --max-depth 6
+
+# Standalone sitemap generator
+python sitemap_generator.py https://example.com --max-pages 500 --max-depth 5
+```
+
 #### **Competitor-Only Analysis**
 ```bash
 python ultimate_seo_analyzer.py https://yoursite.com --competitor-only --competitors https://comp1.com https://comp2.com
@@ -114,6 +135,9 @@ Options:
   --competitors, -c       List of competitor URLs
   --max-urls, -m          Maximum URLs for bulk analysis (default: 100)
   --competitor-only       Run only competitor analysis
+  --generate-sitemap, -s  Generate comprehensive sitemap with full website crawling
+  --max-pages, -p         Maximum pages to crawl for sitemap generation (default: 500)
+  --max-depth, -d         Maximum crawl depth for sitemap generation (default: 5)
   --help, -h              Show help message
 ```
 
