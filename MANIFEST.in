@@ -1,0 +1,57 @@
+# Include documentation files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include SECURITY.md
+include USAGE.md
+include PROJECT_SUMMARY.md
+
+# Include configuration files
+include requirements.txt
+include .env.example
+include pyproject.toml
+include setup.py
+
+# Include installation scripts
+include install.sh
+
+# Include GitHub templates
+recursive-include .github *
+
+# Exclude development and build files
+exclude .env
+exclude *.pyc
+exclude *.pyo
+exclude *.pyd
+exclude __pycache__
+exclude .DS_Store
+exclude Thumbs.db
+
+# Exclude test and development files
+exclude test_*.py
+exclude *_test.py
+exclude demo*.py
+exclude .pytest_cache
+exclude .coverage
+exclude .mypy_cache
+exclude .tox
+
+# Exclude build directories
+exclude build
+exclude dist
+exclude *.egg-info
+
+# Exclude IDE files
+exclude .vscode
+exclude .idea
+exclude *.swp
+exclude *.swo
+
+# Exclude reports and output
+exclude *.html
+exclude *.csv
+exclude reports
+exclude output
+exclude logs

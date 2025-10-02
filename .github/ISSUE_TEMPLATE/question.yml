@@ -1,0 +1,173 @@
+name: ❓ Question
+description: Ask a question about using the Ultimate SEO Analysis Tool
+title: "[Question]: "
+labels: ["question", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about using the Ultimate SEO Analysis Tool? ❓
+        
+        We're here to help! Please provide as much context as possible so we can give you the best answer.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please check the following before asking your question
+      options:
+        - label: I have read the [README.md](https://github.com/yourusername/ultimate-seo-analyzer/blob/main/README.md)
+          required: true
+        - label: I have checked the [Usage Guide](https://github.com/yourusername/ultimate-seo-analyzer/blob/main/USAGE.md)
+          required: true
+        - label: I have searched existing issues and discussions for similar questions
+          required: true
+        - label: I have tried the troubleshooting steps in the documentation
+          required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What type of question do you have?
+      options:
+        - Installation and Setup
+        - Configuration and API Keys
+        - Usage and Commands
+        - SEO Analysis Results
+        - Report Generation
+        - Performance and Optimization
+        - Competitor Analysis
+        - Bulk Analysis
+        - Sitemap Generation
+        - Troubleshooting
+        - Integration with Other Tools
+        - Contributing and Development
+        - Other (please specify below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: |
+        Please ask your question clearly and provide context.
+        
+        The more specific you are, the better we can help you!
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and Background
+      description: Provide any relevant context or background information
+      placeholder: |
+        Help us understand your situation:
+        
+        - What are you trying to accomplish?
+        - What have you tried so far?
+        - What specific challenges are you facing?
+        - Any relevant details about your use case
+
+  - type: textarea
+    id: current-setup
+    attributes:
+      label: Current Setup
+      description: Tell us about your current setup (if relevant to your question)
+      placeholder: |
+        - Operating System: 
+        - Python Version: 
+        - Tool Version: 
+        - Configuration details: 
+        - Any custom modifications:
+
+  - type: textarea
+    id: expected-outcome
+    attributes:
+      label: Expected Outcome
+      description: What outcome are you hoping to achieve?
+      placeholder: |
+        Describe what you're trying to accomplish or what result you're expecting.
+
+  - type: textarea
+    id: attempts
+    attributes:
+      label: What Have You Tried?
+      description: What steps have you already taken to solve this?
+      placeholder: |
+        List the things you've already tried:
+        
+        1. 
+        2. 
+        3. 
+
+  - type: textarea
+    id: code-examples
+    attributes:
+      label: Code Examples or Commands
+      description: Share any relevant code, commands, or configuration files
+      placeholder: |
+        If your question involves specific commands or code, please share them here.
+        
+        ```bash
+        # Example command you're trying to run
+        python ultimate_seo_analyzer.py https://example.com
+        ```
+      render: shell
+
+  - type: textarea
+    id: error-output
+    attributes:
+      label: Error Messages or Output
+      description: If you're getting errors or unexpected output, please share them
+      placeholder: |
+        Paste any error messages or unexpected output here.
+      render: shell
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency Level
+      description: How urgent is this question for you?
+      options:
+        - Low - Just curious, no rush
+        - Medium - Would like to know soon
+        - High - Blocking my current work
+        - Critical - Urgent production issue
+
+  - type: checkboxes
+    id: help-others
+    attributes:
+      label: Community Benefit
+      description: Could this question and its answer help other users?
+      options:
+        - label: This question might be useful for other users too
+        - label: I'd be happy to help improve documentation based on the answer
+        - label: I think this should be added to an FAQ or troubleshooting guide
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any other information that might be helpful
+      placeholder: |
+        Add any other relevant information:
+        
+        - Screenshots (if applicable)
+        - Links to related resources
+        - Specific SEO requirements or constraints
+        - Industry or domain-specific considerations
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/yourusername/ultimate-seo-analyzer/blob/main/CODE_OF_CONDUCT.md)
+          required: true
