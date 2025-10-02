@@ -1,0 +1,163 @@
+name: 🐛 Bug Report
+description: Report a bug or issue with the Ultimate SEO Analysis Tool
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! 🐛
+        
+        Please fill out this form as completely as possible to help us understand and fix the issue.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please check the following before submitting
+      options:
+        - label: I have searched existing issues to make sure this bug hasn't been reported
+          required: true
+        - label: I have read the [troubleshooting guide](https://github.com/yourusername/ultimate-seo-analyzer#-troubleshooting)
+          required: true
+        - label: I am using the latest version of the tool
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is
+      placeholder: Describe what happened and what you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the behavior
+      placeholder: |
+        1. Run command '...'
+        2. Enter URL '...'
+        3. See error
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+      placeholder: Describe the expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+      placeholder: Describe what actually happened instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-logs
+    attributes:
+      label: Error Messages/Logs
+      description: Any error messages or logs you received
+      placeholder: Paste any error messages or relevant log output here
+      render: shell
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      options:
+        - Windows 10
+        - Windows 11
+        - macOS (Intel)
+        - macOS (Apple Silicon)
+        - Ubuntu/Debian
+        - CentOS/RHEL/Fedora
+        - Other Linux
+        - Other (please specify in additional context)
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      description: What version of Python are you using?
+      placeholder: "e.g., 3.9.7, 3.10.2, 3.11.1"
+    validations:
+      required: true
+
+  - type: input
+    id: tool-version
+    attributes:
+      label: Tool Version
+      description: What version of the Ultimate SEO Analysis Tool are you using?
+      placeholder: "e.g., 1.0.0, latest from main branch"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: analysis-type
+    attributes:
+      label: Analysis Type
+      description: What type of analysis were you running when the bug occurred?
+      options:
+        - Single page analysis
+        - Bulk sitemap analysis
+        - Competitor analysis
+        - Sitemap generation
+        - Demo mode
+        - Other (please specify in additional context)
+
+  - type: input
+    id: url-tested
+    attributes:
+      label: URL Being Analyzed
+      description: What URL were you analyzing when the bug occurred? (if applicable and not sensitive)
+      placeholder: "e.g., https://example.com"
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Any additional environment details that might be relevant
+      placeholder: |
+        - Network configuration (proxy, firewall, etc.)
+        - Virtual environment details
+        - Any custom configurations
+        - Other relevant system information
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: |
+        - Screenshots (if applicable)
+        - Workarounds you've tried
+        - Related issues or discussions
+        - Any other relevant information
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/yourusername/ultimate-seo-analyzer/blob/main/CODE_OF_CONDUCT.md)
+          required: true
